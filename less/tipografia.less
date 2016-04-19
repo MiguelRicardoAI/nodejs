@@ -1,0 +1,30 @@
+h1{
+	color:#e4e5d3;
+	font-size: 2.5em;
+	margin-top: 12px;
+}
+h2{
+	color:#9d9181;
+	font-size: 1.5em;
+	margin-top: 15px;
+}
+
+a:link::before{
+	content: @separador;
+	content: @{longitud};
+}
+
+p{
+	font-size: 2em;
+	color: #eefefe;
+	.highligth{
+		color: orange;
+	}
+	.small{
+		font-size: .8em;
+		::after{
+			content: "leer mas";
+			color: greyscale(blue(red));
+		}
+	}
+}
